@@ -1,6 +1,9 @@
 PrizePicks Client
 =================
 
+[![Gem Version](https://badge.fury.io/rb/prizepicks.svg)](https://badge.fury.io/rb/prizepicks)
+[![Run tests](https://github.com/troyizzle/prizepicks/actions/workflows/main.yml/badge.svg)](https://github.com/troyizzle/prizepicks/actions/workflows/main.yml)
+
 A client for PrizePicks API.
 
 ## Installation
@@ -11,10 +14,12 @@ gem 'prizepicks'
 ```
 
 Add then execute:
-$ bundle install
+
+`$ bundle install`
 
 Or install it yourself as:
-$ gem install prizepicks
+
+`$ gem install prizepicks`
 
 ## Usage
 ### Currently this only has fetching /entries
