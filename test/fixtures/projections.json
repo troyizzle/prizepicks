@@ -1,0 +1,136 @@
+{
+  "data": [
+    {
+      "type": "projection",
+      "id": "1078856",
+      "attributes": {
+        "board_time": "2023-02-17T00:16:00-05:00",
+        "custom_image": null,
+        "description": "22 Games Remaining",
+        "discount_percentage": 96,
+        "end_time": "2023-02-23T20:30:00-05:00",
+        "flash_sale_line_score": 0.5,
+        "is_promo": true,
+        "line_score": 15.5,
+        "projection_type": "Single Stat",
+        "rank": 0,
+        "refundable": true,
+        "start_time": "2023-02-23T20:30:00-05:00",
+        "stat_type": "30+ Points Games",
+        "status": "pre_game",
+        "tv_channel": null,
+        "updated_at": "2023-02-17T11:09:52-05:00"
+      },
+      "relationships": {
+        "duration": {
+          "data": null
+        },
+        "league": {
+          "data": {
+            "type": "league",
+            "id": "188"
+          }
+        },
+        "new_player": {
+          "data": {
+            "type": "new_player",
+            "id": "123792"
+          }
+        },
+        "projection_type": {
+          "data": {
+            "type": "projection_type",
+            "id": "2"
+          }
+        },
+        "stat_type": {
+          "data": {
+            "type": "stat_type",
+            "id": "363"
+          }
+        }
+      }
+    },
+    {
+      "type": "projection",
+      "id": "1078584",
+      "attributes": {
+        "board_time": "2023-02-16T22:10:00-05:00",
+        "custom_image": null,
+        "description": "25 Games Remaining",
+        "end_time": null,
+        "flash_sale_line_score": null,
+        "is_promo": false,
+        "line_score": 15.5,
+        "projection_type": "Single Stat",
+        "rank": 1,
+        "refundable": true,
+        "start_time": "2023-02-20T12:15:00-05:00",
+        "stat_type": "10+ Assists Games",
+        "status": "pre_game",
+        "tv_channel": null,
+        "updated_at": "2023-02-16T22:16:14-05:00"
+      },
+      "relationships": {
+        "duration": {
+          "data": null
+        },
+        "league": {
+          "data": {
+            "type": "league",
+            "id": "188"
+          }
+        },
+        "new_player": {
+          "data": {
+            "type": "new_player",
+            "id": "60341"
+          }
+        },
+        "projection_type": {
+          "data": {
+            "type": "projection_type",
+            "id": "2"
+          }
+        },
+        "stat_type": {
+          "data": {
+            "type": "stat_type",
+            "id": "158"
+          }
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "new_player",
+      "id": "47022",
+      "attributes": {
+        "image_url": "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90027124.png",
+        "league": "SOCCER",
+        "league_id": 82,
+        "market": null,
+        "name": "Eric Maxim Choupo-Moting",
+        "position": "F",
+        "team": "Bayern München",
+        "team_name": null
+      },
+      "relationships": {
+        "league": {
+          "data": {
+            "type": "league",
+            "id": "82"
+          }
+        }
+      }
+    }
+  ],
+  "links": {
+    "self": "api.prizepicks.com/projections?per_page=250&single_stat=true"
+  },
+  "meta": {
+    "current_page": 1,
+    "total_pages": 1
+  }
+}

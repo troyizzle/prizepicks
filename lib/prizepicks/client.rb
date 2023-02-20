@@ -6,14 +6,16 @@ module PrizePicks
     include Api::Endpoints
 
     attr_accessor(*Config::ATTRIBUTES)
+    attr_reader :adapter
 
     def initialize(options = {})
       PrizePicks::Config::ATTRIBUTES.each do |key|
         send("#{key}=", options.fetch(key, PrizePicks.config.send(key)))
       end
 
-      raise ArgumentError, 'Missing :email' unless email
-      raise ArgumentError, 'Missing :password' unless password
+      # For testing
+      @stubs = options[:stubs] || nil
+      @adapter = options[:adapter] || nil
     end
   end
 end

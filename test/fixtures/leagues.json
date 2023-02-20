@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "id": "238",
+      "type": "league",
+      "attributes": {
+        "name": "AUSNBL",
+        "rank": 0,
+        "active": true,
+        "created_at": "2022-10-19T13:08:08.276-04:00",
+        "updated_at": "2023-02-17T00:08:09.351-05:00",
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/basketball.svg",
+        "last_five_games_enabled": false,
+        "projections_count": 0
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "9",
+      "type": "league",
+      "attributes": {
+        "name": "NFL",
+        "rank": 0,
+        "active": true,
+        "created_at": "2018-07-19T13:26:11.622-04:00",
+        "updated_at": "2023-02-11T21:00:36.023-05:00",
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/football.svg",
+        "last_five_games_enabled": true,
+        "projections_count": 0
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    }
+  ],
+  "included": [
+   {
+      "id": "2",
+      "type": "projection_filter",
+      "attributes": {
+        "name": "Single Stat",
+        "type": "ProjectionType",
+        "rank": null,
+        "created_at": "2021-01-18T18:08:09.323-05:00",
+        "updated_at": "2021-01-18T18:08:09.323-05:00",
+        "lfg_ignored_leagues": null
+      }
+    },
+    {
+      "id": "133",
+      "type": "projection_filter",
+      "attributes": {
+        "name": "Hole 11 Shots",
+        "type": "StatType",
+        "rank": 17,
+        "created_at": "2022-02-18T20:01:27.270-05:00",
+        "updated_at": "2022-02-25T08:23:59.224-05:00",
+        "lfg_ignored_leagues": null
+      }
+    }
+  ]
+}
