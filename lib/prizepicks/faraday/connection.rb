@@ -10,7 +10,7 @@ module PrizePicks
           faraday.response :json
           faraday.use :cookie_jar
           faraday.response :raise_error
-          faraday.adapter ::Faraday.default_adapter
+          faraday.adapter adapter, @stubs
         end
       end
     end
