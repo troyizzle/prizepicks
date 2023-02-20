@@ -6,6 +6,8 @@ on:
       - main
 
   pull_request:
+    branches:
+      - "*"
 
 jobs:
   build:
@@ -23,5 +25,9 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
-    - name: Run the default task
-      run: bundle exec rake
+    - name: Rubocop check
+      run: |
+        bundle exec rubocop
+    - name: Run tests
+      run: |
+        bundle exec rake test
