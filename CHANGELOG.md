@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.2](https://www.github.com/troyizzle/prizepicks/compare/v0.2.1...v0.2.2) (2023-02-21)
+
+
+### Bug Fixes
+
+* entries incorrectly mapped ([347186d](https://www.github.com/troyizzle/prizepicks/commit/347186d7d0889ad5dbc149a94741b4b42375e36c))
+
 ### [0.2.1](https://www.github.com/troyizzle/prizepicks/compare/v0.2.0...v0.2.1) (2023-02-21)
 
 
