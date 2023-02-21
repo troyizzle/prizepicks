@@ -5,7 +5,11 @@ module PrizePicks
   class Base < OpenStruct
     def initialize(resp)
       @resp = resp
-      super to_obstruct(resp.dig('data', 'attributes'))
+      super to_obstruct(attributes)
+    end
+
+    def attributes
+      @resp.dig('data', 'attributes') || @resp['attributes']
     end
 
     def data

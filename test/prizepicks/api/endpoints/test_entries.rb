@@ -23,7 +23,9 @@ module PrizePicks
                                stub: stub)
           resp = client.entries
           assert_equal PrizePicks::Collection, resp.class
-          assert_equal PrizePicks::Entry, resp.data.first.class
+          first_entry = resp.data.first
+          assert_equal PrizePicks::Entry, first_entry.class
+          assert_equal 2000, first_entry.amount_bet_cents
         end
       end
     end
