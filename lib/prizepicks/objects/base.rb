@@ -13,7 +13,7 @@ module PrizePicks
     end
 
     def data
-      @resp['data']
+      @resp['data'] || @resp
     end
 
     def to_obstruct(obj)

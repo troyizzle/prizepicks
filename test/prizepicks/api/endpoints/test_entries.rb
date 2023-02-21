@@ -26,6 +26,7 @@ module PrizePicks
           first_entry = resp.data.first
           assert_equal PrizePicks::Entry, first_entry.class
           assert_equal 2000, first_entry.amount_bet_cents
+          assert_equal '134928677', first_entry.data['id']
         end
       end
     end
