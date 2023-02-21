@@ -19,6 +19,10 @@ module MiniTest
     def stub_response(fixture:, status: 200, headers: { 'Content-Type' => 'application/json' })
       [status, headers, File.read("test/fixtures/#{fixture}.json")]
     end
+
+    def read_fixture(fixture)
+      JSON.parse(File.read("test/fixtures/#{fixture}.json"))
+    end
   end
 end
 
