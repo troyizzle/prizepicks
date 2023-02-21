@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.3](https://www.github.com/troyizzle/prizepicks/compare/v0.2.2...v0.2.3) (2023-02-21)
+
+
+### Bug Fixes
+
+* correctly map array response ([81e8629](https://www.github.com/troyizzle/prizepicks/commit/81e862967bbd53cc1bd852f1a2c9e900dea9d4e6))
+
 ### [0.2.2](https://www.github.com/troyizzle/prizepicks/compare/v0.2.1...v0.2.2) (2023-02-21)
 
 
