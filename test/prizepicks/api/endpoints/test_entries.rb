@@ -20,13 +20,23 @@ module PrizePicks
           stub = stub_request(PrizePicks::Api::Endpoints::Entries::ENDPOINT,
                               response: stub_response(fixture: 'entries'))
           client = init_client(email: 'fake@fake.com', password: 'fake123!',
-                               stub: stub)
+                               stub:)
           resp = client.entries
           assert_equal PrizePicks::Collection, resp.class
           first_entry = resp.data.first
           assert_equal PrizePicks::Entry, first_entry.class
           assert_equal 2000, first_entry.amount_bet_cents
           assert_equal '134928677', first_entry.data['id']
+        end
+
+        def test_entries_included
+          stub = stub_request(PrizePicks::Api::Endpoints::Entries::ENDPOINT,
+                              response: stub_response(fixture: 'entries'))
+          client = init_client(email: 'fake@fake.com', password: 'fake123!',
+                               stub:)
+          resp = client.entries
+          included = resp.included
+          assert_equal 2, included.count
         end
       end
     end

@@ -12,7 +12,7 @@ module PrizePicks
         def test_entries
           stub = stub_request(PrizePicks::Api::Endpoints::Leagues::ENDPOINT,
                               response: stub_response(fixture: 'leagues'))
-          client = init_client(stub: stub)
+          client = init_client(stub:)
           resp = client.leagues
           assert_equal PrizePicks::Collection, resp.class
           assert_equal PrizePicks::League, resp.data.first.class

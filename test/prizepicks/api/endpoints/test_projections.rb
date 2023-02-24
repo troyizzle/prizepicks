@@ -12,7 +12,7 @@ module PrizePicks
         def test_projections
           stub = stub_request(PrizePicks::Api::Endpoints::Projections::ENDPOINT,
                               response: stub_response(fixture: 'projections'))
-          client = init_client(stub: stub)
+          client = init_client(stub:)
           resp = client.projections
           assert_equal PrizePicks::Collection, resp.class
           assert_equal PrizePicks::Projection, resp.data.first.class
