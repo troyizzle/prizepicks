@@ -30,6 +30,8 @@ Metrics/LineLength:
   Max: 120
 Style/Documentation:
   Enabled: false
+Style/HashSyntax:
+  Enabled: false
 Style/ModuleFunction:
   Enabled: false
 Style/TrailingCommaInHashLiteral:
