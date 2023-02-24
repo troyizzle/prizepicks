@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/troyizzle/prizepicks/compare/v0.2.3...v0.3.0) (2023-02-24)
+
+
+### Features
+
+* related predictions on entry class ([bb60d4b](https://www.github.com/troyizzle/prizepicks/commit/bb60d4bdbeb346659df22caef897a4a81f5268cc))
+* return included response in collection ([a816739](https://www.github.com/troyizzle/prizepicks/commit/a8167393304415e483b9155019527e527d5503c8))
+
 ### [0.2.3](https://www.github.com/troyizzle/prizepicks/compare/v0.2.2...v0.2.3) (2023-02-21)
 
 
