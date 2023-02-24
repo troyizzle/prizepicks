@@ -6,6 +6,7 @@ module Project
     def test_entry
       entry = PrizePicks::Entry.new(read_fixture('entry'))
       assert_equal 6000, entry.amount_to_win_cents
+      assert_equal 2, entry.related_predictions.count
     end
   end
 end
