@@ -16,7 +16,7 @@ module PrizePicks
                                 },
                               })
           client = init_client(email: 'fake@fake.com', password: 'fake123!',
-                               stub:)
+                               stub: stub)
           resp = client.sign_in
           assert_equal PrizePicks::User, resp.class
           assert_equal 'example@example.com', resp.email
