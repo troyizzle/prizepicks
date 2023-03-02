@@ -17,5 +17,17 @@ module PrizePicks
       @stubs = options[:stubs] || nil
       @adapter = options[:adapter] || nil
     end
+
+    def inspect
+      content = Config::ATTRIBUTES.map do |key|
+        if key == :password
+          "#{key}: [FILTERED]"
+        else
+          "#{key}: #{send(key).inspect}"
+        end
+      end.compact.join(', ')
+
+      "#<#{self.class.name} #{content}>"
+    end
   end
 end
