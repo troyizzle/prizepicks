@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0](https://www.github.com/troyizzle/prizepicks/compare/v0.3.0...v0.4.0) (2023-03-02)
+
+
+### Features
+
+* client inspect filter ([e1d2c0a](https://www.github.com/troyizzle/prizepicks/commit/e1d2c0a91f136c7ceaaad7489145c015e804cfce))
+* member_transactions endpoints ([0d64526](https://www.github.com/troyizzle/prizepicks/commit/0d64526bc65db6c23b02740be0d5f24e54f3d9c0))
+
 ## [0.3.0](https://www.github.com/troyizzle/prizepicks/compare/v0.2.3...v0.3.0) (2023-02-24)
 
 
