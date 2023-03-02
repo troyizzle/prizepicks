@@ -21,6 +21,7 @@ module PrizePicks
   autoload :Base, 'prizepicks/objects/base'
   autoload :Entry, 'prizepicks/objects/entry'
   autoload :League, 'prizepicks/objects/league'
+  autoload :MemberTransaction, 'prizepicks/objects/member_transaction'
   autoload :Projection, 'prizepicks/objects/projection'
   autoload :User, 'prizepicks/objects/user'
 end
